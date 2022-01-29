@@ -5,8 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Release:
-    needs:
+  release:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
     steps:
